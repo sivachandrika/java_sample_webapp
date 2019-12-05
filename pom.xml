@@ -21,6 +21,23 @@
 			<scope>provided</scope>
 		</dependency>
   </dependencies>
+	
+	<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>maven-release</name>
+        <url>http://18.224.32.160:8081/artifactory/maven-release</url>
+    </repository>
+
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>maven-snapshot</name>
+        <url>http://18.224.32.160:8081/artifactory/maven-snapshot</url>
+    </snapshotRepository>
+
+</distributionManagement>
+
+	
   <build>
     <finalName>devops</finalName>
   </build>
