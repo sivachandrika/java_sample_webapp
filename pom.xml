@@ -7,6 +7,17 @@
   <version>1.0-SNAPSHOT</version>
   <name>devops Maven Webapp</name>
   <url>http://maven.apache.org</url>
+
+  <properties>
+	<sonar.projectKey>kmayer10_liquor-shop-demo</sonar.projectKey>
+        <sonar.organization>kmayer10</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.login>faff74d8cb559ee0ed1500446f12b3918db42332</sonar.login>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+  </properties>
+
   <dependencies>
     <dependency>
 	    <groupId>junit</groupId>
