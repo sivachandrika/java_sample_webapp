@@ -4,6 +4,7 @@ phases:
     commands: 
       - apt-get update -y
       - apt-get install -y maven
+      - export DEBIAN_FRONTEND=noninteractive && apt-get install -y awscli
   build: 
     commands: 
       - mvn clean package
