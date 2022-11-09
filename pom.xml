@@ -37,7 +37,7 @@
     <repository>
         <id>central</id>
         <name>maven-release</name>
-        <url>http://18.224.32.160:8081/artifactory/maven-release</url>
+        <url>https://maven.pkg.github.com/kmayer10/tekton-pipeline-demo</url>
     </repository>
 
     <snapshotRepository>
