@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: java-sample-app
+spec:
+  selector:
+    matchLabels:
+      app: java-sample-app
+  template:
+    metadata:
+      labels:
+        app: java-sample-app
+    spec:
+      containers:
+      - name: java-sample-app
+        image: kulbhushanmayer/kaniko:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080
